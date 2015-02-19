@@ -6,28 +6,38 @@ snippet perl
 	${1}
 
 snippet sub
-	sub ${1:#:function_name} {
+	sub ${1:#:function_name}
+    {
 		${2:TARGET}
 	}
 
 snippet if
-	if (${1:#:condition}) {
+	if (${1:#:condition})
+    {
 		${2:TARGET}
 	}
 
 snippet ife
-	if (${1:#:condition}) {
+	if (${1:#:condition})
+    {
 		${2:TARGET}
-	} else {
+	}
+    else
+    {
 		${3:#:else...}
 	}
 
 snippet ifee
-	if (${1:#:condition}) {
+	if (${1:#:condition})
+    {
 		${2:TARGET}
-	} elsif (${3}) {
+	}
+    elsif (${3})
+
 		${4:#:elsif...}
-	} else {
+	}
+    else
+    {
 		${5:#:else...}
 	}
 
@@ -36,7 +46,8 @@ snippet xif
 
 snippet while
 abbr wh
-	while (${1:#:condition}) {
+	while (${1:#:condition})
+    {
 		${2:TARGET}
 	}
 
@@ -45,7 +56,8 @@ abbr xwh
 	${1:#:expression} while ${2:#:condition};
 
 snippet for
-	for (my $${1:#:var} = 0; $$1 < ${2:#:expression}; $$1++) {
+	for (my $${1:#:var} = 0; $$1 < ${2:#:expression}; $$1++)
+    {
 		${3:TARGET}
 	}
 
@@ -59,7 +71,8 @@ snippet xfor
 
 snippet unless
 abbr un
-	unless (${1:condition}) {
+	unless (${1:condition}
+    {
 		${2:TARGET}
 	}
 
@@ -68,10 +81,12 @@ abbr xun
 	${1:#:expression} unless ${2:#:condition};
 
 snippet eval
-	eval {
+	eval
+    {
 		${1:TARGET}
 	};
-	if ($@) {
+	if ($@)
+    {
 		${2:#:handle failure...}
 	}
 
