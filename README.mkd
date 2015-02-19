@@ -1,8 +1,12 @@
 Neosnippet-snippets
 ===================
 
-The standard snippets repository for
+This is a fork of the standard snippets repository for
 [neosnippet](https://github.com/Shougo/neosnippet.vim).
 
-You can fork or send pull request.
+This fork is very opinionated, and includes, among other minor changes:
+
+- Newlines before and after brackets ({ })
+
+You can fork or send pull requests.
 
